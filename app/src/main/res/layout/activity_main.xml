@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:textSize="20sp"
+        android:paddingTop="4dp"
+        android:paddingRight="4dp"
+        android:paddingStart="4dp"
+        android:layout_below="@id/btnUploadTCP"
+        android:paddingEnd="4dp"
+        android:paddingBottom="4dp"
+        android:text="Status: " />
+
+    <Button
+        android:id="@+id/btnUploadTCP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Upload TCP" />
+
+
+    <Button
+        android:id="@+id/btnUploadUDP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btnUploadTCP"
+        android:layout_toEndOf="@id/btnUploadTCP"
+        android:text="Upload UDP" />
+
+
+
+
+</RelativeLayout>
